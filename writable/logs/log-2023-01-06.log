@@ -1,0 +1,400 @@
+ERROR - 2023-01-06 03:33:04 --> mysqli_sql_exception: Table 'centrinova.user-position' doesn't exist in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1614): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(131): CodeIgniter\Database\BaseBuilder->countAll()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(31): App\Models\AdminModel->retrive_list_position_count()
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-06 03:33:04 --> Table 'centrinova.user-position' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows` FROM `user-position`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows` FROM `user-position`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows` FROM `user-position`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1614): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `user-position`', null, false)
+ 5 APPPATH\Models\AdminModel.php(131): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH\Controllers\AdminController\Admin.php(31): App\Models\AdminModel->retrive_list_position_count()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 03:33:51 --> mysqli_sql_exception: Table 'centrinova.menu' doesn't exist in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `menu`.`...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu`.`...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu`.`...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `menu`.`...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModelMenu.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(33): App\Models\AdminModelMenu->retrive_list_menu()
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-06 03:33:51 --> Table 'centrinova.menu' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `menu`.`IdMenu`, `category`.`IdCategory`, `menu`.`MenuName`, `category`.`CategoryName`, `menu`.`MenuImage`, `menu`.`MenuPrice`, `menu`.`CreatedDate`, `menu`.`CreatedBy`
+FROM `menu`
+LEFT JOIN `category` ON `menu`.`IdCategory` = `category`.`IdCategory`
+ORDER BY `menu`.`CreatedDate` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu`.`IdMenu`, `category`.`IdCategory`, `menu`.`MenuName`, `category`.`CategoryName`, `menu`.`MenuImage`, `menu`.`MenuPrice`, `menu`.`CreatedDate`, `menu`.`CreatedBy`
+FROM `menu`
+LEFT JOIN `category` ON `menu`.`IdCategory` = `category`.`IdCategory`
+ORDER BY `menu`.`CreatedDate` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu`.`IdMenu`, `category`.`IdCategory`, `menu`.`MenuName`, `category`.`CategoryName`, `menu`.`MenuImage`, `menu`.`MenuPrice`, `menu`.`CreatedDate`, `menu`.`CreatedBy`
+FROM `menu`
+LEFT JOIN `category` ON `menu`.`IdCategory` = `category`.`IdCategory`
+ORDER BY `menu`.`CreatedDate` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `menu`.`IdMenu`, `category`.`IdCategory`, `menu`.`MenuName`, `category`.`CategoryName`, `menu`.`MenuImage`, `menu`.`MenuPrice`, `menu`.`CreatedDate`, `menu`.`CreatedBy`
+FROM `menu`
+LEFT JOIN `category` ON `menu`.`IdCategory` = `category`.`IdCategory`
+ORDER BY `menu`.`CreatedDate` ASC', [], false)
+ 5 APPPATH\Models\AdminModelMenu.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(33): App\Models\AdminModelMenu->retrive_list_menu()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 03:38:08 --> mysqli_sql_exception: Table 'centrinova.category' doesn't exist in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModelCategory.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(64): App\Models\AdminModelCategory->retrive_list_category()
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_category()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-06 03:38:08 --> Table 'centrinova.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`', [], false)
+ 5 APPPATH\Models\AdminModelCategory.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(64): App\Models\AdminModelCategory->retrive_list_category()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_category()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 04:12:32 --> mysqli_sql_exception: Table 'centrinova.category' doesn't exist in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(438): App\Models\AdminModel->getCategory('1')
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-06 04:12:32 --> Table 'centrinova.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = :IdCategory:', [...], false)
+ 5 APPPATH\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(438): App\Models\AdminModel->getCategory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 04:15:07 --> mysqli_sql_exception: Table 'centrinova.category' doesn't exist in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(438): App\Models\AdminModel->getCategory('1')
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-06 04:15:07 --> Table 'centrinova.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = :IdCategory:', [...], false)
+ 5 APPPATH\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(438): App\Models\AdminModel->getCategory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 04:15:46 --> mysqli_sql_exception: Table 'centrinova.category' doesn't exist in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(438): App\Models\AdminModel->getCategory('1')
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-06 04:15:46 --> Table 'centrinova.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = :IdCategory:', [...], false)
+ 5 APPPATH\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(438): App\Models\AdminModel->getCategory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:16:29 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(443): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:19:33 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(443): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:20:21 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(443): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:20:35 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(443): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:20:36 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(443): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:20:36 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(443): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:22:19 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:23:11 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:23:43 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:24:47 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:24:59 --> syntax error, unexpected token ")"
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 3 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-06 04:27:12 --> mysqli_sql_exception: Table 'centrinova.category' doesn't exist in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(115): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(439): App\Models\AdminModel->getDataUserEdit('1')
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-06 04:27:12 --> Table 'centrinova.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `category`
+WHERE `IdCategory` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `category`
+WHERE `IdCategory` = :IdCategory:', [...], false)
+ 5 APPPATH\Models\AdminModel.php(115): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(439): App\Models\AdminModel->getDataUserEdit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:27:30 --> syntax error, unexpected token ")"
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 3 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:27:45 --> Cannot use object of type stdClass as array
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 4 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-06 04:27:59 --> Undefined property: stdClass::$UserName
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 31.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$UserName', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(444): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

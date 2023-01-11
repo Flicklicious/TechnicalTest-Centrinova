@@ -1,0 +1,131 @@
+CRITICAL - 2022-12-26 05:19:22 --> Undefined variable $row
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 66.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 66)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(25): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-26 18:25:46 --> mysqli_sql_exception: Unknown column 'NamaLengkap' in 'field list' in J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 J:\Source Code\CloneProject\app\Database\Seeds\User.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\User->run()
+#6 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 J:\Source Code\CloneProject\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+CRITICAL - 2022-12-26 18:36:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 147.
+ 1 APPPATH\Controllers\AdminController\Admin.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-26 18:36:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 147.
+ 1 APPPATH\Controllers\AdminController\Admin.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-26 18:36:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 147.
+ 1 APPPATH\Controllers\AdminController\Admin.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-26 18:36:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 147.
+ 1 APPPATH\Controllers\AdminController\Admin.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-26 06:11:53 --> syntax error, unexpected token ":"
+in APPPATH\Views\v_admin\v_a_menu.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 4 APPPATH\Controllers\AdminController\Admin.php(25): view('v_admin/v_a_index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-26 06:12:09 --> syntax error, unexpected token ":"
+in APPPATH\Views\v_admin\v_a_menu.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 4 APPPATH\Controllers\AdminController\Admin.php(25): view('v_admin/v_a_index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-26 19:25:04 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'clone-project', 3306, '', 0)
+#1 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\CloneProject\app\Models\AdminModel.php(26): CodeIgniter\Model->__call('get', Array)
+#6 J:\Source Code\CloneProject\app\Controllers\AdminController\Admin.php(109): App\Models\AdminModel->getDataUser('flicklicious')
+#7 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->login()
+#8 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#9 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 J:\Source Code\CloneProject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 J:\Source Code\CloneProject\app\Models\AdminModel.php(26): CodeIgniter\Model->__call('get', Array)
+#5 J:\Source Code\CloneProject\app\Controllers\AdminController\Admin.php(109): App\Models\AdminModel->getDataUser('flicklicious')
+#6 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->login()
+#7 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\CloneProject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2022-12-26 19:25:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `Username` = :Username:
+OR `Email` = :Email:', [...], false)
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\AdminModel.php(26): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\AdminController\Admin.php(109): App\Models\AdminModel->getDataUser('flicklicious')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->login()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

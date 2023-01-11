@@ -1,0 +1,327 @@
+CRITICAL - 2023-01-07 22:38:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 168.
+ 1 APPPATH\Controllers\AdminController\Admin.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 168)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-07 09:46:11 --> mysqli_sql_exception: Unknown column 'IdPosition' in 'where clause' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(147): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(29): App\Models\AdminModel->retrive_list_user_count_admin()
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-07 09:46:11 --> Unknown column 'IdPosition' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE :IdPosition: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\AdminModel.php(147): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\AdminController\Admin.php(29): App\Models\AdminModel->retrive_list_user_count_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-07 09:46:40 --> mysqli_sql_exception: Unknown column 'IdPosition' in 'where clause' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(147): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(29): App\Models\AdminModel->retrive_list_user_count_admin()
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-07 09:46:40 --> Unknown column 'IdPosition' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE :IdPosition: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\AdminModel.php(147): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\AdminController\Admin.php(29): App\Models\AdminModel->retrive_list_user_count_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 09:46:59 --> Undefined variable $result_user_all
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 12.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_user_all', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 12)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(32): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-07 09:47:44 --> mysqli_sql_exception: Unknown column 'IdPosition' in 'where clause' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(147): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(29): App\Models\AdminModel->retrive_list_user_count_admin()
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-07 09:47:44 --> Unknown column 'IdPosition' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition` LIKE :IdPosition: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\AdminModel.php(147): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\AdminController\Admin.php(29): App\Models\AdminModel->retrive_list_user_count_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 09:49:25 --> Undefined variable $result_user_all
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 12.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_user_all', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 12)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(32): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 09:50:45 --> Undefined variable $result_user_all
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 12.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_user_all', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 12)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(32): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-07 10:09:49 --> mysqli_sql_exception: Can't create table `centrinova`.`posts` (errno: 150 "Foreign key constraint is incorrectly formed") in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `p...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 J:\Source Code\Project-Centrinova\app\Database\Migrations\2023-01-07-155841_Posts.php(58): CodeIgniter\Database\Forge->createTable('posts')
+#5 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Posts->up()
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 J:\Source Code\Project-Centrinova\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+CRITICAL - 2023-01-07 10:22:56 --> Undefined variable $row
+in APPPATH\Views\v_admin\v_a_list_articles.php on line 50.
+ 1 APPPATH\Views\v_admin\v_a_list_articles.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\v_admin\\v_a_list_articles.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_articles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_articles', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(15): view('v_admin/v_a_list_articles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->list_article()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 10:23:03 --> Undefined variable $row
+in APPPATH\Views\v_admin\v_a_list_articles.php on line 50.
+ 1 APPPATH\Views\v_admin\v_a_list_articles.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\v_admin\\v_a_list_articles.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_articles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_articles', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(15): view('v_admin/v_a_list_articles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->list_article()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:03:30 --> Call to undefined method App\Models\AdminModel::retrive_list_user_join
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminController\Admin.php(43): CodeIgniter\Model->__call('retrive_list_user_join', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_user()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:04:10 --> Call to undefined method App\Models\AdminModel::retrive_list_user_join
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminController\Admin.php(43): CodeIgniter\Model->__call('retrive_list_user_join', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_user()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:04:28 --> Undefined property: stdClass::$PositionName
+in APPPATH\Views\v_admin\v_a_list_user.php on line 66.
+ 1 APPPATH\Views\v_admin\v_a_list_user.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$PositionName', 'APPPATH\\Views\\v_admin\\v_a_list_user.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(44): view('v_admin/v_a_list_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_user()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:06:47 --> Call to undefined method App\Models\AdminModel::retrive_list_position
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminController\Admin.php(37): CodeIgniter\Model->__call('retrive_list_position', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:07:25 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_insert_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_insert_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_insert_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_insert_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_insert_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(38): view('v_admin/v_a_insert_user')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:11:44 --> Call to undefined method App\Models\AdminModel::retrive_list_user_count_admin
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminController\Admin.php(29): CodeIgniter\Model->__call('retrive_list_user_count_admin', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:12:30 --> Undefined variable $result_admin
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 29.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_admin', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 29)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(30): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 11:37:17 --> Call to undefined method CodeIgniter\Validation\Validation::getErros()
+in APPPATH\Controllers\AdminController\Article.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->addArticle()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-07 21:07:05 --> mysqli_sql_exception: Duplicate entry 'flicklicious' for key 'Username' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `po...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 J:\Source Code\Project-Centrinova\app\Models\AdminModelArticle.php(55): CodeIgniter\BaseModel->save(Array)
+#9 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Article.php(69): App\Models\AdminModelArticle->insertPost(Array, 'article')
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Article->addArticle()
+#11 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+#12 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#15 {main}
+CRITICAL - 2023-01-07 21:07:05 --> Duplicate entry 'flicklicious' for key 'Username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `posts` (`Username`, `PostTitle`, `PostStatus`, `PostThumbnail`, `PostDescription`, `PostContent`, `PostType`, `PostTitleSEO`) VALUES (\'flicklicious\', \'Test 1\', \'active \', \'1673147225_12ef3ebb1cb7f7a36576.png\', \'Lorem Ipsum\', \'Lorem Ipsum Dolor Amet\', \'article\', \'test-1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `posts` (`Username`, `PostTitle`, `PostStatus`, `PostThumbnail`, `PostDescription`, `PostContent`, `PostType`, `PostTitleSEO`) VALUES (\'flicklicious\', \'Test 1\', \'active \', \'1673147225_12ef3ebb1cb7f7a36576.png\', \'Lorem Ipsum\', \'Lorem Ipsum Dolor Amet\', \'article\', \'test-1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `posts` (`Username`, `PostTitle`, `PostStatus`, `PostThumbnail`, `PostDescription`, `PostContent`, `PostType`, `PostTitleSEO`) VALUES (\'flicklicious\', \'Test 1\', \'active \', \'1673147225_12ef3ebb1cb7f7a36576.png\', \'Lorem Ipsum\', \'Lorem Ipsum Dolor Amet\', \'article\', \'test-1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `posts` (`Username`, `PostTitle`, `PostStatus`, `PostThumbnail`, `PostDescription`, `PostContent`, `PostType`, `PostTitleSEO`) VALUES (:Username:, :PostTitle.1:, :PostStatus:, :PostThumbnail:, :PostDescription:, :PostContent:, :PostType:, :PostTitleSEO:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AdminModelArticle.php(55): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AdminController\Article.php(69): App\Models\AdminModelArticle->insertPost([...], 'article')
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->addArticle()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 22:17:09 --> Undefined variable $x
+in APPPATH\Models\AdminModelArticle.php on line 74.
+ 1 APPPATH\Models\AdminModelArticle.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $x', 'APPPATH\\Models\\AdminModelArticle.php', 74)
+ 2 APPPATH\Controllers\AdminController\Article.php(27): App\Models\AdminModelArticle->listPost('article', 1, 'ROOTPATH\\public', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-07 22:17:23 --> Attempt to read property "PostTitle" on array
+in APPPATH\Views\v_admin\v_a_list_articles.php on line 50.
+ 1 APPPATH\Views\v_admin\v_a_list_articles.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "PostTitle" on array', 'APPPATH\\Views\\v_admin\\v_a_list_articles.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_articles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_articles', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(32): view('v_admin/v_a_list_articles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

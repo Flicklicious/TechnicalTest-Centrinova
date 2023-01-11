@@ -1,0 +1,1221 @@
+CRITICAL - 2023-01-10 03:52:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 43.
+ 1 APPPATH\Controllers\Home.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 03:52:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 43.
+ 1 APPPATH\Controllers\Home.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 03:53:15 --> Undefined variable $pager
+in APPPATH\Views\v_user\v_u_post_content.php on line 47.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 03:53:23 --> Undefined variable $pager
+in APPPATH\Views\v_user\v_u_post_content.php on line 47.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:01:15 --> Too few arguments to function App\Models\AdminModelComments::listCommentFront(), 1 passed in J:\Source Code\Project-Centrinova\app\Controllers\Home.php on line 45 and at least 2 expected
+in APPPATH\Models\AdminModelComments.php on line 37.
+ 1 APPPATH\Controllers\Home.php(45): App\Models\AdminModelComments->listCommentFront('28')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:01:45 --> Undefined variable $pager
+in APPPATH\Views\v_user\v_u_post_content.php on line 47.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(48): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:03:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+in APPPATH\Models\AdminModelComments.php on line 47.
+ 1 APPPATH\Controllers\Home.php(47): App\Models\AdminModelComments->listCommentFront('28', 5, 'dt')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:06:30 --> Undefined array key "CommentName"
+in APPPATH\Views\v_user\v_u_post_content.php on line 40.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentName"', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:07:25 --> Attempt to read property "CommentName" on array
+in APPPATH\Views\v_user\v_u_post_content.php on line 40.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "CommentName" on array', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:08:00 --> Undefined array key "CommentName"
+in APPPATH\Views\v_user\v_u_post_content.php on line 40.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentName"', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:12:21 --> Undefined array key "PostThumbnail"
+in APPPATH\Views\v_user\v_u_post_content.php on line 9.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PostThumbnail"', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(53): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:13:19 --> Cannot access offset of type string on string
+in APPPATH\Views\v_user\v_u_post_content.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 4 APPPATH\Controllers\Home.php(53): view('v_user/v_u_post_content', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:13:39 --> Attempt to read property "CommentName" on string
+in APPPATH\Views\v_user\v_u_post_content.php on line 40.
+ 1 APPPATH\Views\v_user\v_u_post_content.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "CommentName" on string', 'APPPATH\\Views\\v_user\\v_u_post_content.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_post_content.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_post_content', [], true)
+ 5 APPPATH\Controllers\Home.php(53): view('v_user/v_u_post_content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:14:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:14:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:15:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:15:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:15:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:15:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:15:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:15:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:16:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:38:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:38:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:38:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:38:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 04:39:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:02:27 --> Attempt to read property "CommentPostId" on array
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 46.
+ 1 APPPATH\Views\v_admin\v_a_list_comment.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "CommentPostId" on array', 'APPPATH\\Views\\v_admin\\v_a_list_comment.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_comment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(135): view('v_admin/v_a_list_comment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:03:06 --> Attempt to read property "Email" on array
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 57.
+ 1 APPPATH\Views\v_admin\v_a_list_comment.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Email" on array', 'APPPATH\\Views\\v_admin\\v_a_list_comment.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_comment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(135): view('v_admin/v_a_list_comment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:03:53 --> Undefined array key "Email"
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 57.
+ 1 APPPATH\Views\v_admin\v_a_list_comment.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Email"', 'APPPATH\\Views\\v_admin\\v_a_list_comment.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_comment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(135): view('v_admin/v_a_list_comment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:06:29 --> Undefined variable $PostId
+in APPPATH\Controllers\AdminController\Article.php on line 133.
+ 1 APPPATH\Controllers\AdminController\Article.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $PostId', 'APPPATH\\Controllers\\AdminController\\Article.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:28:51 --> Undefined variable $commentId
+in APPPATH\Controllers\AdminController\Article.php on line 41.
+ 1 APPPATH\Controllers\AdminController\Article.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $commentId', 'APPPATH\\Controllers\\AdminController\\Article.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:29:54 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 26.
+ 1 APPPATH\Controllers\AdminController\Article.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:32:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 05:32:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:28:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:30:25 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 26.
+ 1 APPPATH\Controllers\AdminController\Article.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('41')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:30:43 --> Undefined array key "CommentId"
+in APPPATH\Controllers\AdminController\Article.php on line 26.
+ 1 APPPATH\Controllers\AdminController\Article.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('41')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:31:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 26.
+ 1 APPPATH\Views\v_admin\v_a_list_comment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_admin\\v_a_list_comment.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_comment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(45): view('v_admin/v_a_list_comment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('41')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:32:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:32:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:32:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:32:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:32:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 26.
+ 1 APPPATH\Views\v_admin\v_a_list_comment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_admin\\v_a_list_comment.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_comment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(45): view('v_admin/v_a_list_comment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:34:35 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 37.
+ 1 APPPATH\Controllers\AdminController\Article.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:35:19 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 37.
+ 1 APPPATH\Controllers\AdminController\Article.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:36:50 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 37.
+ 1 APPPATH\Controllers\AdminController\Article.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:39:24 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\AdminController\Article.php on line 39.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController\\Article.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController\\Article')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController\\Article')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController\\Article', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:39:37 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 24.
+ 1 APPPATH\Controllers\AdminController\Article.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:40:04 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 24.
+ 1 APPPATH\Controllers\AdminController\Article.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:40:29 --> Too few arguments to function App\Models\AdminModelArticle::getPost(), 0 passed in J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Article.php on line 24 and exactly 1 expected
+in APPPATH\Models\AdminModelArticle.php on line 111.
+ 1 APPPATH\Controllers\AdminController\Article.php(24): App\Models\AdminModelArticle->getPost()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:40:55 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 24.
+ 1 APPPATH\Controllers\AdminController\Article.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:41:07 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 24.
+ 1 APPPATH\Controllers\AdminController\Article.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:41:08 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 24.
+ 1 APPPATH\Controllers\AdminController\Article.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:41:24 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 25.
+ 1 APPPATH\Controllers\AdminController\Article.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:41:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 26.
+ 1 APPPATH\Views\v_admin\v_a_list_comment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_admin\\v_a_list_comment.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_comment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(46): view('v_admin/v_a_list_comment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:42:03 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 26.
+ 1 APPPATH\Views\v_admin\v_a_list_comment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_admin\\v_a_list_comment.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_comment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(46): view('v_admin/v_a_list_comment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-10 07:43:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Models\AdminModelArticle.php(115): CodeIgniter\Model->__call('get', Array)
+#6 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Article.php(24): App\Models\AdminModelArticle->getPost(Array)
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+#9 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#12 {main}
+CRITICAL - 2023-01-10 07:43:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `posts`
+WHERE `PostId` = ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `posts`
+WHERE `PostId` = ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `posts`
+WHERE `PostId` = ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `posts`
+WHERE `PostId` = :PostId:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\AdminModelArticle.php(115): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\AdminController\Article.php(24): App\Models\AdminModelArticle->getPost([])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-10 07:44:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Models\AdminModelArticle.php(115): CodeIgniter\Model->__call('get', Array)
+#6 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Article.php(24): App\Models\AdminModelArticle->getPost(Array)
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+#9 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#12 {main}
+CRITICAL - 2023-01-10 07:44:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `posts`
+WHERE `PostId` = ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `posts`
+WHERE `PostId` = ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `posts`
+WHERE `PostId` = ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `posts`
+WHERE `PostId` = :PostId:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\AdminModelArticle.php(115): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\AdminController\Article.php(24): App\Models\AdminModelArticle->getPost([])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:45:41 --> Undefined array key "CommentId"
+in APPPATH\Controllers\AdminController\Article.php on line 24.
+ 1 APPPATH\Controllers\AdminController\Article.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:52:04 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 25.
+ 1 APPPATH\Controllers\AdminController\Article.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:53:14 --> Attempt to read property "CommentPostId" on array
+in APPPATH\Controllers\AdminController\Article.php on line 25.
+ 1 APPPATH\Controllers\AdminController\Article.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "CommentPostId" on array', 'APPPATH\\Controllers\\AdminController\\Article.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:53:16 --> Attempt to read property "CommentPostId" on array
+in APPPATH\Controllers\AdminController\Article.php on line 25.
+ 1 APPPATH\Controllers\AdminController\Article.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "CommentPostId" on array', 'APPPATH\\Controllers\\AdminController\\Article.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:53:32 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\AdminController\Article.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController\\Article.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController\\Article')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController\\Article')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController\\Article', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:53:37 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 25.
+ 1 APPPATH\Controllers\AdminController\Article.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('42')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:54:44 --> Undefined array key "CommentPostId"
+in APPPATH\Controllers\AdminController\Article.php on line 25.
+ 1 APPPATH\Controllers\AdminController\Article.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CommentPostId"', 'APPPATH\\Controllers\\AdminController\\Article.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:55:28 --> Cannot use object of type stdClass as array
+in APPPATH\Views\v_admin\v_a_list_comment.php on line 48.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_comment', [], true)
+ 4 APPPATH\Controllers\AdminController\Article.php(41): view('v_admin/v_a_list_comment', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:56:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:56:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 07:58:53 --> Undefined variable $commentId
+in APPPATH\Controllers\AdminController\Article.php on line 23.
+ 1 APPPATH\Controllers\AdminController\Article.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $commentId', 'APPPATH\\Controllers\\AdminController\\Article.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listComment('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:03:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:03:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:06:51 --> Call to undefined method App\Models\AdminModel::retrive_list_position
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminController\Admin.php(74): CodeIgniter\Model->__call('retrive_list_position', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:07:54 --> Undefined variable $result_position
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_position', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(79): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-10 21:10:21 --> mysqli_sql_exception: Duplicate entry 'flicklicious-sumbaidp@gmail.com' for key 'Username' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(57): App\Models\AdminModel->saverecords_user(Array)
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-10 21:10:21 --> Duplicate entry 'flicklicious-sumbaidp@gmail.com' for key 'Username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'flicklicious\', \'$2y$10$St2mClp54jimpsIE8XLF3ekX52hRkfV6VBdpxQUFfJf3mwWQGfVye\', \'Sumbai\', \'sumbaidp@gmail.com\', \'flicklicious\', \'2023-01-10T21:10:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'flicklicious\', \'$2y$10$St2mClp54jimpsIE8XLF3ekX52hRkfV6VBdpxQUFfJf3mwWQGfVye\', \'Sumbai\', \'sumbaidp@gmail.com\', \'flicklicious\', \'2023-01-10T21:10:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'flicklicious\', \'$2y$10$St2mClp54jimpsIE8XLF3ekX52hRkfV6VBdpxQUFfJf3mwWQGfVye\', \'Sumbai\', \'sumbaidp@gmail.com\', \'flicklicious\', \'2023-01-10T21:10:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (:Username:, :Password:, :FullName:, :Email:, :CreatedBy:, :CreatedDate:)', [...], false)
+ 5 APPPATH\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminController\Admin.php(57): App\Models\AdminModel->saverecords_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:20:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:20:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:21:50 --> Undefined variable $PostContent
+in APPPATH\Views\v_user\v_u_index.php on line 28.
+ 1 APPPATH\Views\v_user\v_u_index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $PostContent', 'APPPATH\\Views\\v_user\\v_u_index.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_user\\v_u_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_user/v_u_index', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('v_user/v_u_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:23:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:23:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:23:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:23:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-10 21:37:02 --> mysqli_sql_exception: Duplicate entry 'flicklicious-sumbaidp@gmail.com' for key 'Username' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(57): App\Models\AdminModel->saverecords_user(Array)
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-10 21:37:02 --> Duplicate entry 'flicklicious-sumbaidp@gmail.com' for key 'Username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'flicklicious\', \'$2y$10$9oeImELs18oa00HRMyaKteT5Amexk8faD/ZSoqV/a1AJj61zHBeSW\', \'Sumbai\', \'sumbaidp@gmail.com\', \'flicklicious\', \'2023-01-10T21:37:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'flicklicious\', \'$2y$10$9oeImELs18oa00HRMyaKteT5Amexk8faD/ZSoqV/a1AJj61zHBeSW\', \'Sumbai\', \'sumbaidp@gmail.com\', \'flicklicious\', \'2023-01-10T21:37:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'flicklicious\', \'$2y$10$9oeImELs18oa00HRMyaKteT5Amexk8faD/ZSoqV/a1AJj61zHBeSW\', \'Sumbai\', \'sumbaidp@gmail.com\', \'flicklicious\', \'2023-01-10T21:37:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (:Username:, :Password:, :FullName:, :Email:, :CreatedBy:, :CreatedDate:)', [...], false)
+ 5 APPPATH\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminController\Admin.php(57): App\Models\AdminModel->saverecords_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:40:16 --> Undefined variable $edit_result
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $edit_result', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(134): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('25')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:40:36 --> Undefined variable $edit_result
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $edit_result', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(134): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('25')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:40:58 --> Undefined variable $edit_result
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $edit_result', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(134): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('25')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:42:16 --> Undefined variable $edit_result
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $edit_result', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(134): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('25')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 08:42:30 --> Undefined variable $edit_result
+in APPPATH\Views\v_admin\v_a_edit_user.php on line 28.
+ 1 APPPATH\Views\v_admin\v_a_edit_user.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $edit_result', 'APPPATH\\Views\\v_admin\\v_a_edit_user.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(134): view('v_admin/v_a_edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('25')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-10 09:15:19 --> mysqli_sql_exception: Unknown column 'UserId' in 'where clause' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(75): CodeIgniter\Model->__call('get', Array)
+#6 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(74): App\Models\AdminModel->getDataUserEdit('1')
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#9 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#12 {main}
+CRITICAL - 2023-01-10 09:15:19 --> Unknown column 'UserId' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `UserId` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `UserId` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `UserId` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `UserId` = :UserId:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\AdminModel.php(75): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\AdminController\Admin.php(74): App\Models\AdminModel->getDataUserEdit('1')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-10 22:19:18 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(49): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(132): App\Models\AdminModel->saverecords_user(Array)
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-10 22:19:18 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `EditedDate`, `EditedBy`, `IdUser`) VALUES (\'flicklicious\', \'$2y$10$umql1dGMD1NWzST7L9OT0.gShP4TwWn/rLK8zNE56SLcTWJyErzJK\', \'Sumbai Distapratama\', \'sumbaidp@gmail.com\', \'2023-01-10T22:19:18\', \'flicklicious\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `EditedDate`, `EditedBy`, `IdUser`) VALUES (\'flicklicious\', \'$2y$10$umql1dGMD1NWzST7L9OT0.gShP4TwWn/rLK8zNE56SLcTWJyErzJK\', \'Sumbai Distapratama\', \'sumbaidp@gmail.com\', \'2023-01-10T22:19:18\', \'flicklicious\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `EditedDate`, `EditedBy`, `IdUser`) VALUES (\'flicklicious\', \'$2y$10$umql1dGMD1NWzST7L9OT0.gShP4TwWn/rLK8zNE56SLcTWJyErzJK\', \'Sumbai Distapratama\', \'sumbaidp@gmail.com\', \'2023-01-10T22:19:18\', \'flicklicious\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `EditedDate`, `EditedBy`, `IdUser`) VALUES (:Username:, :Password:, :FullName:, :Email:, :EditedDate:, :EditedBy:, :IdUser:)', [...], false)
+ 5 APPPATH\Models\AdminModel.php(49): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminController\Admin.php(132): App\Models\AdminModel->saverecords_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 09:27:15 --> syntax error, unexpected token ";"
+in APPPATH\Views\v_admin\v_a_menu.php on line 58.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_user', [], true)
+ 4 APPPATH\Controllers\AdminController\Admin.php(144): view('v_admin/v_a_edit_user', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_user('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 09:40:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 09:40:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 09:41:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 09:41:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 21:25:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 51.
+ 1 APPPATH\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-10 21:25:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 51.
+ 1 APPPATH\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->postDetail('assets', 'FCPATH\\favicon.ico')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

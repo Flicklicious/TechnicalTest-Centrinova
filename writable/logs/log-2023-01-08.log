@@ -1,0 +1,141 @@
+ERROR - 2023-01-08 00:14:28 --> mysqli_sql_exception: Duplicate entry 'regar-regar@example.com' for key 'Username' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(104): App\Models\AdminModel->saverecords_user(Array)
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-08 00:14:28 --> Duplicate entry 'regar-regar@example.com' for key 'Username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'regar\', \'$2y$10$2o4cwg0eezWfDjfZXQSxf.7btFnyCkSjzQnzece7bllypKL6HZaWK\', \'Regar Chairul Shaleh\', \'regar@example.com\', \'flicklicious\', \'2023-01-08T00:14:28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'regar\', \'$2y$10$2o4cwg0eezWfDjfZXQSxf.7btFnyCkSjzQnzece7bllypKL6HZaWK\', \'Regar Chairul Shaleh\', \'regar@example.com\', \'flicklicious\', \'2023-01-08T00:14:28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'regar\', \'$2y$10$2o4cwg0eezWfDjfZXQSxf.7btFnyCkSjzQnzece7bllypKL6HZaWK\', \'Regar Chairul Shaleh\', \'regar@example.com\', \'flicklicious\', \'2023-01-08T00:14:28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (:Username:, :Password:, :FullName:, :Email:, :CreatedBy:, :CreatedDate:)', [...], false)
+ 5 APPPATH\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminController\Admin.php(104): App\Models\AdminModel->saverecords_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-08 00:14:39 --> mysqli_sql_exception: Duplicate entry 'regar-regar@example.com' for key 'Username' in J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 J:\Source Code\Project-Centrinova\app\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\Project-Centrinova\app\Controllers\AdminController\Admin.php(104): App\Models\AdminModel->saverecords_user(Array)
+#6 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+#7 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Project-Centrinova\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Project-Centrinova\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-08 00:14:39 --> Duplicate entry 'regar-regar@example.com' for key 'Username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'regar\', \'$2y$10$rJlz.m1PV5Xyc8RDYTeTnOkbZbh3hZuSTAKNhJBkZ0M/xIqjldQzG\', \'Regar Chairul Shaleh\', \'regar@example.com\', \'flicklicious\', \'2023-01-08T00:14:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'regar\', \'$2y$10$rJlz.m1PV5Xyc8RDYTeTnOkbZbh3hZuSTAKNhJBkZ0M/xIqjldQzG\', \'Regar Chairul Shaleh\', \'regar@example.com\', \'flicklicious\', \'2023-01-08T00:14:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (\'regar\', \'$2y$10$rJlz.m1PV5Xyc8RDYTeTnOkbZbh3hZuSTAKNhJBkZ0M/xIqjldQzG\', \'Regar Chairul Shaleh\', \'regar@example.com\', \'flicklicious\', \'2023-01-08T00:14:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`Username`, `Password`, `FullName`, `Email`, `CreatedBy`, `CreatedDate`) VALUES (:Username:, :Password:, :FullName:, :Email:, :CreatedBy:, :CreatedDate:)', [...], false)
+ 5 APPPATH\Models\AdminModel.php(56): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminController\Admin.php(104): App\Models\AdminModel->saverecords_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 04:05:39 --> Class "App\Models\AdminModelCategory" not found
+in APPPATH\Controllers\AdminController\Admin.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\AdminController\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 07:34:39 --> Undefined variable $PostId
+in APPPATH\Controllers\AdminController\Article.php on line 106.
+ 1 APPPATH\Controllers\AdminController\Article.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $PostId', 'APPPATH\\Controllers\\AdminController\\Article.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->editArticle('3')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 08:20:20 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\AdminController\Article.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController\\Article.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController\\Article')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController\\Article')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController\\Article', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 09:08:59 --> CodeIgniter\BaseModel::paginate(): Argument #1 ($perPage) must be of type ?int, string given, called in J:\Source Code\Project-Centrinova\app\Models\AdminModelArticle.php on line 85
+in SYSTEMPATH\BaseModel.php on line 1095.
+ 1 APPPATH\Models\AdminModelArticle.php(85): CodeIgniter\BaseModel->paginate('ROOTPATH\\public', null)
+ 2 APPPATH\Controllers\AdminController\Article.php(47): App\Models\AdminModelArticle->listPost('article', 'ROOTPATH\\public', 'dt')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 09:09:07 --> Division by zero
+in SYSTEMPATH\Pager\Pager.php on line 148.
+ 1 SYSTEMPATH\BaseModel.php(1106): CodeIgniter\Pager\Pager->store('dt', 1, 0, 1, 0)
+ 2 APPPATH\Models\AdminModelArticle.php(85): CodeIgniter\BaseModel->paginate(0, 'dt')
+ 3 APPPATH\Controllers\AdminController\Article.php(47): App\Models\AdminModelArticle->listPost('article', 0, 'ROOTPATH\\public', 'dt')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 09:19:40 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getRowArray
+in APPPATH\Models\AdminModelArticle.php on line 87.
+ 1 APPPATH\Models\AdminModelArticle.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getRowArray', 'APPPATH\\Models\\AdminModelArticle.php', 87)
+ 2 APPPATH\Controllers\AdminController\Article.php(47): App\Models\AdminModelArticle->listPost('article', 'ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 09:19:51 --> Cannot access offset of type string on string
+in APPPATH\Views\v_admin\v_a_list_articles.php on line 69.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_articles', [], true)
+ 4 APPPATH\Controllers\AdminController\Article.php(51): view('v_admin/v_a_list_articles', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 09:20:35 --> Attempt to read property "PostId" on string
+in APPPATH\Views\v_admin\v_a_list_articles.php on line 69.
+ 1 APPPATH\Views\v_admin\v_a_list_articles.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "PostId" on string', 'APPPATH\\Views\\v_admin\\v_a_list_articles.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_articles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_articles', [], true)
+ 5 APPPATH\Controllers\AdminController\Article.php(51): view('v_admin/v_a_list_articles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-08 09:24:02 --> Cannot use object of type stdClass as array
+in APPPATH\Views\v_admin\v_a_list_articles.php on line 78.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_articles', [], true)
+ 4 APPPATH\Controllers\AdminController\Article.php(51): view('v_admin/v_a_list_articles', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Article->listArticle()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Article))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

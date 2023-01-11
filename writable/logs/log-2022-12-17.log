@@ -1,0 +1,170 @@
+CRITICAL - 2022-12-17 07:26:34 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\AdminController\Admin.php on line 165.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 07:28:28 --> Too few arguments to function App\Models\AdminModel::getDataUser(), 0 passed in J:\Source Code\CloneProject\app\Controllers\AdminController\Admin.php on line 161 and exactly 1 expected
+in APPPATH\Models\AdminModel.php on line 21.
+ 1 APPPATH\Controllers\AdminController\Admin.php(161): App\Models\AdminModel->getDataUser()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->forgot_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 07:30:00 --> Too few arguments to function App\Models\AdminModel::getDataUser(), 0 passed in J:\Source Code\CloneProject\app\Controllers\AdminController\Admin.php on line 161 and exactly 1 expected
+in APPPATH\Models\AdminModel.php on line 21.
+ 1 APPPATH\Controllers\AdminController\Admin.php(161): App\Models\AdminModel->getDataUser()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->forgot_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-17 07:43:53 --> mysqli_sql_exception: Duplicate entry '' for key 'Username' in J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 J:\Source Code\CloneProject\app\Models\AdminModel.php(33): CodeIgniter\BaseModel->save(Array)
+#9 J:\Source Code\CloneProject\app\Controllers\AdminController\Admin.php(179): App\Models\AdminModel->updateDataUser(Array)
+#10 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->forgot_password()
+#11 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#12 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 J:\Source Code\CloneProject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 J:\Source Code\CloneProject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#15 {main}
+CRITICAL - 2022-12-17 07:43:53 --> Duplicate entry '' for key 'Username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `user` (`Token`) VALUES (\'5a4c4f4723776ee3bc36f0aee83a0a80\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`Token`) VALUES (\'5a4c4f4723776ee3bc36f0aee83a0a80\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`Token`) VALUES (\'5a4c4f4723776ee3bc36f0aee83a0a80\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`Token`) VALUES (:Token:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AdminModel.php(33): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AdminController\Admin.php(179): App\Models\AdminModel->updateDataUser([...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->forgot_password()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 08:07:05 --> Undefined variable $sent_email
+in APPPATH\Controllers\AdminController\Admin.php on line 180.
+ 1 APPPATH\Controllers\AdminController\Admin.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sent_email', 'APPPATH\\Controllers\\AdminController\\Admin.php', 180)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->forgot_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-17 08:07:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-17 08:07:33 --> 220 smtp.gmail.com ESMTP s92-20020a17090a2f6500b002191873187dsm6487988pjd.33 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [158.140.180.242]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s92-20020a17090a2f6500b002191873187dsm6487988pjd.33 - gsmtp
+
+ERROR - 2022-12-17 08:10:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-17 08:10:32 --> 220 smtp.gmail.com ESMTP n28-20020a63a51c000000b0045dc85c4a5fsm2829579pgf.44 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [158.140.180.242]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n28-20020a63a51c000000b0045dc85c4a5fsm2829579pgf.44 - gsmtp
+
+ERROR - 2022-12-17 08:11:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-17 08:11:58 --> 220 smtp.gmail.com ESMTP 21-20020a631955000000b004772abe41f6sm3130338pgz.83 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [158.140.180.242]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 21-20020a631955000000b004772abe41f6sm3130338pgz.83 - gsmtp
+
+CRITICAL - 2022-12-17 23:17:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 213.
+ 1 APPPATH\Controllers\AdminController\Admin.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->reset_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 23:17:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 213.
+ 1 APPPATH\Controllers\AdminController\Admin.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->reset_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 23:18:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 213.
+ 1 APPPATH\Controllers\AdminController\Admin.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->reset_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 23:19:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 213.
+ 1 APPPATH\Controllers\AdminController\Admin.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->reset_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 23:25:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 213.
+ 1 APPPATH\Controllers\AdminController\Admin.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->reset_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 23:28:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 213.
+ 1 APPPATH\Controllers\AdminController\Admin.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->reset_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-17 23:30:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController\Admin.php on line 213.
+ 1 APPPATH\Controllers\AdminController\Admin.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController\\Admin.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->reset_password()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

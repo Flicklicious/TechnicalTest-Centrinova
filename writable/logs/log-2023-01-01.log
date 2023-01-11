@@ -1,0 +1,135 @@
+CRITICAL - 2023-01-01 07:00:21 --> Undefined property: mysqli::$CategoryName
+in APPPATH\Views\v_admin\v_a_edit_category.php on line 32.
+ 1 APPPATH\Views\v_admin\v_a_edit_category.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$CategoryName', 'APPPATH\\Views\\v_admin\\v_a_edit_category.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_edit_category.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_edit_category', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(464): view('v_admin/v_a_edit_category', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->editdata_category('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 07:05:52 --> Too few arguments to function App\Controllers\AdminController\Admin::updateData_category(), 0 passed in J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\AdminController\Admin.php on line 487.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 07:06:53 --> Too few arguments to function App\Controllers\AdminController\Admin::updateData_category(), 0 passed in J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\AdminController\Admin.php on line 469.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 07:06:54 --> Too few arguments to function App\Controllers\AdminController\Admin::updateData_category(), 0 passed in J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\AdminController\Admin.php on line 469.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 07:10:58 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AdminModel.php(138): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\AdminController\Admin.php(478): App\Models\AdminModel->updateCategory([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 07:11:04 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AdminModel.php(138): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\AdminController\Admin.php(478): App\Models\AdminModel->updateCategory([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 07:13:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AdminModel.php(138): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\AdminController\Admin.php(479): App\Models\AdminModel->updateCategory([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-01 08:47:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AdminModel.php(138): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\AdminController\Admin.php(477): App\Models\AdminModel->updateCategory([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category(null)
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-01 21:51:13 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 J:\Source Code\Doublewinspizza\app\Models\AdminModel.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\Doublewinspizza\app\Controllers\AdminController\Admin.php(480): App\Models\AdminModel->saverecords_category(Array)
+#6 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category()
+#7 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Doublewinspizza\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-01 21:51:13 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `category` (`CategoryName`, `IdCategory`, `EditedDate`, `EditedBy`) VALUES (\'Coba\', \'1\', \'2023-01-01T21:51:13\', \'flicklicious\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`CategoryName`, `IdCategory`, `EditedDate`, `EditedBy`) VALUES (\'Coba\', \'1\', \'2023-01-01T21:51:13\', \'flicklicious\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`CategoryName`, `IdCategory`, `EditedDate`, `EditedBy`) VALUES (\'Coba\', \'1\', \'2023-01-01T21:51:13\', \'flicklicious\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`CategoryName`, `IdCategory`, `EditedDate`, `EditedBy`) VALUES (:CategoryName:, :IdCategory:, :EditedDate:, :EditedBy:)', [...], false)
+ 5 APPPATH\Models\AdminModel.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminController\Admin.php(480): App\Models\AdminModel->saverecords_category([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-01 21:59:29 --> mysqli_sql_exception: Duplicate entry '8' for key 'PRIMARY' in J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 J:\Source Code\Doublewinspizza\app\Models\AdminModel.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 J:\Source Code\Doublewinspizza\app\Controllers\AdminController\Admin.php(487): App\Models\AdminModel->saverecords_category(Array)
+#6 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category()
+#7 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\Doublewinspizza\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\Doublewinspizza\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2023-01-01 21:59:29 --> Duplicate entry '8' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `category` (`IdCategory`, `CategoryName`, `EditedDate`, `EditedBy`) VALUES (\'8\', \'Sumbai Choise\', \'2023-01-01T21:59:29\', \'flicklicious\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`IdCategory`, `CategoryName`, `EditedDate`, `EditedBy`) VALUES (\'8\', \'Sumbai Choise\', \'2023-01-01T21:59:29\', \'flicklicious\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`IdCategory`, `CategoryName`, `EditedDate`, `EditedBy`) VALUES (\'8\', \'Sumbai Choise\', \'2023-01-01T21:59:29\', \'flicklicious\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`IdCategory`, `CategoryName`, `EditedDate`, `EditedBy`) VALUES (:IdCategory:, :CategoryName:, :EditedDate:, :EditedBy:)', [...], false)
+ 5 APPPATH\Models\AdminModel.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AdminController\Admin.php(487): App\Models\AdminModel->saverecords_category([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->updateData_category()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

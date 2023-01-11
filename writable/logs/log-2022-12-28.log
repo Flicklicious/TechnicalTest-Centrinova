@@ -1,0 +1,357 @@
+ERROR - 2022-12-28 04:13:51 --> mysqli_sql_exception: Table 'clone-project.user-position' doesn't exist in J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `user`.`...', 0)
+#1 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user`.`...')
+#2 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user`.`...')
+#3 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `user`.`...', Array, false)
+#4 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Models\AdminModel.php(93): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Controllers\AdminController\Admin.php(43): App\Models\AdminModel->retrive_list_user_join()
+#6 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+#7 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2022-12-28 04:13:51 --> Call to a member function getResult() on bool
+in APPPATH\Models\AdminModel.php on line 94.
+ 1 APPPATH\Controllers\AdminController\Admin.php(43): App\Models\AdminModel->retrive_list_user_join()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-28 04:14:22 --> mysqli_sql_exception: Table 'clone-project.user-position' doesn't exist in J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `user`.`...', 0)
+#1 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user`.`...')
+#2 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user`.`...')
+#3 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `user`.`...', Array, false)
+#4 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Models\AdminModel.php(93): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Controllers\AdminController\Admin.php(43): App\Models\AdminModel->retrive_list_user_join()
+#6 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+#7 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2022-12-28 04:14:22 --> Table 'clone-project.user-position' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `user`.`IdUser`, `user`.`Username`, `user-position`.`PositionName`, `user`.`Password`, `user`.`FullName`, `user`.`Email`, `user`.`LastLogin`, `user`.`CreatedDate`
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+ORDER BY `user`.`CreatedDate` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user`.`IdUser`, `user`.`Username`, `user-position`.`PositionName`, `user`.`Password`, `user`.`FullName`, `user`.`Email`, `user`.`LastLogin`, `user`.`CreatedDate`
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+ORDER BY `user`.`CreatedDate` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user`.`IdUser`, `user`.`Username`, `user-position`.`PositionName`, `user`.`Password`, `user`.`FullName`, `user`.`Email`, `user`.`LastLogin`, `user`.`CreatedDate`
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+ORDER BY `user`.`CreatedDate` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `user`.`IdUser`, `user`.`Username`, `user-position`.`PositionName`, `user`.`Password`, `user`.`FullName`, `user`.`Email`, `user`.`LastLogin`, `user`.`CreatedDate`
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+ORDER BY `user`.`CreatedDate` ASC', [], false)
+ 5 APPPATH\Models\AdminModel.php(93): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(43): App\Models\AdminModel->retrive_list_user_join()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:14:40 --> Undefined variable $result
+in APPPATH\Views\v_admin\v_a_insert_user.php on line 89.
+ 1 APPPATH\Views\v_admin\v_a_insert_user.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Views\\v_admin\\v_a_insert_user.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_insert_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_insert_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(45): view('v_admin/v_a_insert_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:14:57 --> Undefined property: stdClass::$CreatedBy
+in APPPATH\Views\v_admin\v_a_insert_user.php on line 105.
+ 1 APPPATH\Views\v_admin\v_a_insert_user.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$CreatedBy', 'APPPATH\\Views\\v_admin\\v_a_insert_user.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_insert_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_insert_user', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(45): view('v_admin/v_a_insert_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:15:41 --> Undefined array key "IdLevel"
+in APPPATH\Controllers\AdminController\Admin.php on line 135.
+ 1 APPPATH\Controllers\AdminController\Admin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "IdLevel"', 'APPPATH\\Controllers\\AdminController\\Admin.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:16:06 --> Undefined array key "IdLevel"
+in APPPATH\Controllers\AdminController\Admin.php on line 135.
+ 1 APPPATH\Controllers\AdminController\Admin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "IdLevel"', 'APPPATH\\Controllers\\AdminController\\Admin.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:16:07 --> Undefined array key "IdLevel"
+in APPPATH\Controllers\AdminController\Admin.php on line 135.
+ 1 APPPATH\Controllers\AdminController\Admin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "IdLevel"', 'APPPATH\\Controllers\\AdminController\\Admin.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-28 04:16:21 --> mysqli_sql_exception: Table 'sistem-penggajian.category' doesn't exist in J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1614): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Models\AdminModel.php(109): CodeIgniter\Database\BaseBuilder->countAll()
+#5 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Controllers\AdminController\Admin.php(23): App\Models\AdminModel->retrive_list_category_chart()
+#6 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+#7 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2022-12-28 04:16:21 --> Table 'sistem-penggajian.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows` FROM `category`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows` FROM `category`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows` FROM `category`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1614): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `category`', null, false)
+ 5 APPPATH\Models\AdminModel.php(109): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH\Controllers\AdminController\Admin.php(23): App\Models\AdminModel->retrive_list_category_chart()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:17:51 --> Undefined variable $result_category
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 113.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_category', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 113)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(25): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:18:33 --> Undefined variable $result_category
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 158.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_category', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 158)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(25): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:21:31 --> Undefined variable $jumlah_test2
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 113.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah_test2', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 113)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(25): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 04:24:47 --> Unclosed '{' on line 49
+in APPPATH\Views\v_admin\v_a_insert_user.php on line 131.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_insert_user', [], true)
+ 3 APPPATH\Controllers\AdminController\Admin.php(45): view('v_admin/v_a_insert_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->create_user()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 19:23:37 --> Call to undefined method App\Models\AdminModel::saverecods_user
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminController\Admin.php(363): CodeIgniter\Model->__call('saverecods_user', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 08:01:45 --> Undefined variable $result_user
+in APPPATH\Views\v_admin\v_a_list_position.php on line 48.
+ 1 APPPATH\Views\v_admin\v_a_list_position.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result_user', 'APPPATH\\Views\\v_admin\\v_a_list_position.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_position.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_position', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(62): view('v_admin/v_a_list_position', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_position()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 08:02:08 --> Undefined property: stdClass::$Email
+in APPPATH\Views\v_admin\v_a_list_position.php on line 56.
+ 1 APPPATH\Views\v_admin\v_a_list_position.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Email', 'APPPATH\\Views\\v_admin\\v_a_list_position.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_position.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_position', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(62): view('v_admin/v_a_list_position', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_position()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 08:17:45 --> Undefined property: stdClass::$PositionName
+in APPPATH\Views\v_admin\v_a_list_user_employee.php on line 51.
+ 1 APPPATH\Views\v_admin\v_a_list_user_employee.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$PositionName', 'APPPATH\\Views\\v_admin\\v_a_list_user_employee.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_list_user_employee.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_list_user_employee', [], true)
+ 5 APPPATH\Controllers\AdminController\Admin.php(56): view('v_admin/v_a_list_user_employee', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_user_employee()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-28 08:19:15 --> mysqli_sql_exception: Column 'IdPosition' in where clause is ambiguous in J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Models\AdminModel.php(100): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Controllers\AdminController\Admin.php(55): App\Models\AdminModel->retrive_list_user_employee()
+#6 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_user_employee()
+#7 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2022-12-28 08:19:15 --> Column 'IdPosition' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+WHERE `IdPosition` = 4', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+WHERE `IdPosition` = 4')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+WHERE `IdPosition` = 4')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+LEFT JOIN `user-position` ON `user`.`IdPosition` = `user-position`.`IdPosition`
+WHERE `IdPosition` = 4', [], false)
+ 5 APPPATH\Models\AdminModel.php(100): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController\Admin.php(55): App\Models\AdminModel->retrive_list_user_employee()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->list_user_employee()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 09:44:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::count()
+in APPPATH\Models\AdminModel.php on line 137.
+ 1 APPPATH\Controllers\AdminController\Admin.php(23): App\Models\AdminModel->retrive_list_user_count_admin()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-28 09:49:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:IdPosition` = 1: ESCAPE '!'' at line 3 in J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Models\AdminModel.php(137): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\app\Controllers\AdminController\Admin.php(23): App\Models\AdminModel->retrive_list_user_count_admin()
+#6 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+#7 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+#8 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 J:\Source Code\ProjectSistemPenggajian\ProjectSistemPenggajian\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('J:\\Source Code\\...')
+#11 {main}
+CRITICAL - 2022-12-28 09:49:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:IdPosition` = 1: ESCAPE '!'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition = 1 LIKE` `:IdPosition` = 1: ESCAPE \'!\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition = 1 LIKE` `:IdPosition` = 1: ESCAPE \'!\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition = 1 LIKE` `:IdPosition` = 1: ESCAPE \'!\' ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`
+WHERE `IdPosition = 1 LIKE` `:IdPosition` = 1: ESCAPE \'!\' ', [...], false)
+ 5 APPPATH\Models\AdminModel.php(137): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\AdminController\Admin.php(23): App\Models\AdminModel->retrive_list_user_count_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 22:01:55 --> Undefined constant "App\Controllers\AdminController\file"
+in APPPATH\Controllers\AdminController\Admin.php on line 369.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->savedata_user()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 23:23:58 --> Undefined variable $rows
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 142.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rows', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 142)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(28): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 23:24:11 --> Undefined variable $rows
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 142.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rows', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 142)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(28): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-28 23:24:12 --> Undefined variable $rows
+in APPPATH\Views\v_admin\v_a_dashboard.php on line 142.
+ 1 APPPATH\Views\v_admin\v_a_dashboard.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rows', 'APPPATH\\Views\\v_admin\\v_a_dashboard.php', 142)
+ 2 APPPATH\Views\v_admin\v_a_index.php(19): include('APPPATH\\Views\\v_admin\\v_a_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_admin\\v_a_index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_admin/v_a_index', [], true)
+ 6 APPPATH\Controllers\AdminController\Admin.php(28): view('v_admin/v_a_index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

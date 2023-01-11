@@ -67,6 +67,60 @@ class Admin extends BaseController
 		}
 	}
 
+	public function editdata_user_password($id)
+	{
+		$data = [];
+		$DataPost = $this->m_admin->getDataUserEdit($id);
+		if(empty($DataPost))
+		{
+			return redirect()->to(base_url('admin/index'));
+		}
+		$data = $DataPost;
+
+		if($this->request->getMethod()=='post')
+		{
+			$data = $this->request->getVar(); //return inputed data to views
+
+			$rules =
+			[
+				'Password' =>[
+					'rules' => 'required',
+					'errors' => ['required' => 'Password tidak boleh kosong'],
+				],
+			];
+
+			if(!$this->validate($rules))
+			{
+				session()->setFlashdata('warning', $this->validation->getErrors());
+			}
+			else
+			{
+					$EditedBy = session()->get('AccountUsername');
+					date_default_timezone_set("Asia/Jakarta");
+					$currentDate = date("Y-m-d\TH:i:s");
+					$record['EditedDate'] = $currentDate;
+					$record['EditedBy'] = $EditedBy;
+					$record['Password'] = password_hash($this->request->getVar('Password'),PASSWORD_DEFAULT);
+					$record['Email'] = session()->get('AccountEmail');
+					$record['IdUser'] = $id;
+
+					$action = $this->m_admin->updateDataUser($record);
+					if($action != false)
+					{
+						return redirect()->to(base_url('admin/index')); 
+					}
+					else
+					{
+						 session()->setFlashdata('warning', 'Failed To Update Password.');
+						 return redirect()->to(base_url('admin/edit-user/edit/'.$id));
+					}
+				
+				
+			}
+
+		}
+		echo view('v_admin/v_a_edit_password_user', $data);	
+	}
 	
 	public function editdata_user($id)
 	{
@@ -88,10 +142,6 @@ class Admin extends BaseController
 					'rules' => 'required',
 					'errors' => ['required' => 'Username tidak boleh kosong'],
 				],
-				'Password' =>[
-					'rules' => 'required',
-					'errors' => ['required' => 'Password tidak boleh kosong'],
-				],
 				'FullName' =>[
 					'rules' => 'required',
 					'errors' => ['required' => 'Nama tidak boleh kosong'],
@@ -111,16 +161,7 @@ class Admin extends BaseController
 				$EditedBy = session()->get('AccountUsername');
 				date_default_timezone_set("Asia/Jakarta");
 				$currentDate = date("Y-m-d\TH:i:s");
-				// $record =
-				// [
-				// 	'Username' => $this->request->getVar('Username'),
-				// 	'Password' => $this->request->getVar('Password'),
-				// 	'FullName' => $this->request->getVar('FullName'),
-				// 	'Email' => $this->request->getVar('Email'),
-				// 	'EditedDate' => $currentDate,
-				// 	'EditedBy' => $EditedBy,
-				// 	'IdUser' => $id
-				// ];
+
 				$record['Username'] = $this->request->getVar('Username');
 				$record['FullName'] = $this->request->getVar('FullName');
 				$record['Email'] = $this->request->getVar('Email');

@@ -52,26 +52,16 @@
                                     ?>
                                         <form method="post" action="" enctype="multipart/form-data">
                                        
-                                        <div class="form-group">
-                                        <label class="">Username</label>
-                                        <input class="form-control" type="text" name="Username" placeholder="" value="<?php echo(isset($Username))?$Username: ""; ?>">
-                                        </div>
-
-                                        <div class="form-group">
-                                        <label class="">Full Name</label>
-                                        <input class="form-control" type="text" name="FullName" placeholder="" value="<?php echo(isset($FullName))?$FullName: ""; ?>">
-                                        </div>
-
-                                        <div class="form-group">
-                                        <label class="">Email</label>
-                                        <input class="form-control" type="Email" name="Email" placeholder="" value="<?php echo(isset($Email))?$Email: ""; ?>">
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                        
-                                        <input class="btn btn-primary" type="submit" value="Submit" name="save">
-                                        </div>
-                                        </form>
+                                       <div class="form-group">
+                                       <label class="">New Password</label>
+                                       <input class="form-control" type="password" name="Password" placeholder="" >
+                                       </div>
+                                       
+                                       <div class="form-group">
+                                        <a class="btn btn-secondary" href="<?php echo base_url('admin/index'); ?>">Back</a>
+                                       <input class="btn btn-primary" type="submit" value="Submit" name="save">
+                                       </div>
+                                       </form>
                                     </div>
                                  </div>
                             </div>
@@ -82,7 +72,7 @@
                 
 
 
-
+                
             </div>
             <?php include '../app/views/v_admin/v_a_footer.php'; ?>
         </div>

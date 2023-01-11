@@ -67,6 +67,7 @@ $routes->add('list-category', 'AdminController\Admin::list_category');
 $routes->add('list-article/edit/(:any)', 'AdminController\Article::editArticle/$1');
 $routes->add('list-comments/(:any)', 'AdminController\Article::listComment/$1');
 $routes->add('edit-user/edit/(:any)', 'AdminController\Admin::editdata_user/$1');
+$routes->add('edit-user-password/edit/(:any)', 'AdminController\Admin::editdata_user_password/$1');
 
 $routes->add('update-category', 'AdminController\Admin::updateData_category');
 });
